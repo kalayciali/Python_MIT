@@ -281,6 +281,11 @@ if __name__ == '__main__':
     print('Expected Output:', (24, 'hello'))
     print('Actual Output:', ciphertext.decrypt_message())
 
+    f=open('story.txt','r')
+    story=f.read()
+    ciphertext = CiphertextMessage(story)
+    print('Actual Output:', ciphertext.decrypt_message())
+    
     #TODO: WRITE YOUR TEST CASES HERE
 
     #TODO: best shift value and unencrypted story 
